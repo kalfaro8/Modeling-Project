@@ -1,0 +1,62 @@
+{
+  "model_type": "Multi-Output Random Forest",
+  "features": [
+    "Site ID",
+    "Temperature ",
+    "Discharge (m3/s)",
+    "DOY_sin",
+    "DOY_cos",
+    "Temp_Discharge_Interaction",
+    "Rain",
+    "Elevation"
+  ],
+  "targets": [
+    "\u03b418O",
+    "\u03b42H"
+  ],
+  "best_params": {
+    "max_depth": 10,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "n_estimators": 100
+  },
+  "metrics": {
+    "\u03b418O": {
+      "r2": 0.6945686845444965,
+      "rmse": 0.5005315865060561,
+      "mae": 0.3729643039449897,
+      "pearson_r": 0.9128461687854913,
+      "pearson_p": 2.019111731426259e-10
+    },
+    "\u03b42H": {
+      "r2": 0.7799398660248736,
+      "rmse": 3.7359354450995665,
+      "mae": 2.626766154653247,
+      "pearson_r": 0.9591798609473325,
+      "pearson_p": 4.138755538640359e-14
+    }
+  },
+  "feature_importance": {
+    "feature": {
+      "5": "Temp_Discharge_Interaction",
+      "2": "Discharge (m3/s)",
+      "4": "DOY_cos",
+      "3": "DOY_sin",
+      "1": "Temperature ",
+      "6": "Rain",
+      "0": "Site ID",
+      "7": "Elevation"
+    },
+    "importance": {
+      "5": 0.1809053767653686,
+      "2": 0.15984562157652502,
+      "4": 0.15446012150185132,
+      "3": 0.1405269933272521,
+      "1": 0.13269367250504271,
+      "6": 0.10332633505782202,
+      "0": 0.07000072098628189,
+      "7": 0.05824115827985639
+    }
+  }
+}

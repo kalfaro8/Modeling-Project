@@ -1,0 +1,47 @@
+{
+  "model_type": "Multi-Output XGBoost",
+  "features": [
+    "Site ID",
+    "Temperature ",
+    "Discharge (m3/s)",
+    "Temp_Discharge_Interaction",
+    "Rain",
+    "Elevation",
+    "DOY_sin",
+    "DOY_cos"
+  ],
+  "targets": [
+    "\u03b418O",
+    "\u03b42H"
+  ],
+  "best_params": {
+    "estimator__subsample": 0.8,
+    "estimator__n_estimators": 500,
+    "estimator__min_child_weight": 2,
+    "estimator__max_depth": 5,
+    "estimator__learning_rate": 0.07,
+    "estimator__gamma": 0.05,
+    "estimator__colsample_bytree": 0.7
+  },
+  "metrics": {
+    "\u03b418O": {
+      "r2": 0.854930687282708,
+      "rmse": 0.3441398927665808,
+      "mae": 0.25345596313476565,
+      "pearson_r": 0.9520914607995783,
+      "pearson_p": 2.520015504008627e-13
+    },
+    "\u03b42H": {
+      "r2": 0.9146631282932949,
+      "rmse": 2.2906771400268457,
+      "mae": 1.785331695556641,
+      "pearson_r": 0.9663132898817922,
+      "pearson_p": 4.707547976874698e-15
+    }
+  },
+  "tuning_info": {
+    "method": "RandomizedSearchCV",
+    "n_iter": 100,
+    "tuning_time_seconds": 60.098013401031494
+  }
+}
