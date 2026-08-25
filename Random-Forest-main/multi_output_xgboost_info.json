@@ -15,33 +15,33 @@
     "\u03b42H"
   ],
   "best_params": {
-    "estimator__subsample": 0.8,
-    "estimator__n_estimators": 500,
+    "estimator__subsample": 0.7,
+    "estimator__n_estimators": 200,
     "estimator__min_child_weight": 2,
-    "estimator__max_depth": 5,
+    "estimator__max_depth": 7,
     "estimator__learning_rate": 0.07,
     "estimator__gamma": 0.05,
-    "estimator__colsample_bytree": 0.7
+    "estimator__colsample_bytree": 0.8
   },
   "metrics": {
     "\u03b418O": {
-      "r2": 0.854930687282708,
-      "rmse": 0.3441398927665808,
-      "mae": 0.25345596313476565,
-      "pearson_r": 0.9520914607995783,
-      "pearson_p": 2.520015504008627e-13
+      "r2": 0.8484991473951592,
+      "rmse": 0.35168575753497666,
+      "mae": 0.24788997650146485,
+      "pearson_r": 0.9474238459095392,
+      "pearson_p": 7.173288758777166e-13
     },
     "\u03b42H": {
-      "r2": 0.9146631282932949,
-      "rmse": 2.2906771400268457,
-      "mae": 1.785331695556641,
-      "pearson_r": 0.9663132898817922,
-      "pearson_p": 4.707547976874698e-15
+      "r2": 0.9107886686453166,
+      "rmse": 2.3421005329884075,
+      "mae": 1.7693471050262455,
+      "pearson_r": 0.963123374671484,
+      "pearson_p": 1.3117910919039809e-14
     }
   },
   "tuning_info": {
     "method": "RandomizedSearchCV",
     "n_iter": 100,
-    "tuning_time_seconds": 60.098013401031494
+    "tuning_time_seconds": 4.463983058929443
   }
 }
